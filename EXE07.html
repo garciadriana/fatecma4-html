@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<HTML lang="pt-br"><!--EXERCÍCIO 07-->
+<HEAD>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	Body{
+	background: #FFF5EE;
+	color: darkblue;
+	cursor: url("http://4.bp.blogspot.com/-BYQvHkQP5XU/UGn7a0rUyQI/AAAAAAAAFn0/nAGj04m7ydM/s1600/c12.gif"), auto;
+	}
+	A:link{
+		color: #FA8072;
+		text-decoration: none;
+		cursor: url("http://3.bp.blogspot.com/-_g5flHbejto/UGn7L1qmUvI/AAAAAAAAFns/6rKLrSUT_k4/s1600/c11.png"), auto;
+		font-family: verdana;
+		font-size: 15px;
+		}
+	A:visited{
+		color: #A52A2A;
+		text-decoration: none;
+		cursor: url("http://3.bp.blogspot.com/-_g5flHbejto/UGn7L1qmUvI/AAAAAAAAFns/6rKLrSUT_k4/s1600/c11.png"), auto;
+		}
+	A:active{
+		color: #B22222;
+		text-decoration: none;;
+		cursor: url("http://3.bp.blogspot.com/-_g5flHbejto/UGn7L1qmUvI/AAAAAAAAFns/6rKLrSUT_k4/s1600/c11.png"), auto;
+		}
+	A:hover{
+		color: #800000;
+		text-decoration: none;
+	cursor: url("http://3.bp.blogspot.com/-_g5flHbejto/UGn7L1qmUvI/AAAAAAAAFns/6rKLrSUT_k4/s1600/c11.png"), auto;
+		}
+	div{
+		font-weight: bold;
+		font-color: #FFDAB9;
+		font-size: 20;
+		}
+	h1{
+		font-family: Century Gothic;
+		color: #DC143C;
+		font-size: 20;
+		text-align: center;
+		border-top: 2px solid #FF7F50;
+		border-left: 2px solid #FF7F50;
+		border-bottom: 2px solid #FF7F50;
+		border-right: 2px solid #FF7F50;
+		}
+	h2{
+		font-weight: bold;
+		color: #FF6347;
+		font-size: 20px;
+		font-family: verdana;
+		text-align: center;
+		border-top: 2px dotted #FF4500; 
+		border-right: 2px dotted #FF4500; 
+		border-bottom: 2px dotted #FF4500;
+		border-left: 2px dotted #FF4500;
+		}
+	h3{
+		color: #DB7093;
+		font-size: 20px;
+		text-align: right;
+		font-family: Century Gothic;
+		}
+	hr{
+		display: block; 
+		color: #FFDAB9;
+		width: 100%;
+		border-style: double;
+		border-width: 50;
+		text-align: left;
+		}
+</style>
+	<title>EXERCÍCIO 07 - Filmes</title>
+</HEAD>
+<BODY>
+<DIV align = "center">
+<a name="voltar"></a>
+<h1>Utilizando âncoras</h1>
+	<h3>Adriana Garcia e Igor Martins</h3>
+	<DIV align="left">
+		<a href="#LISTA">Lista Ordenada</a><P>
+		<a href="#Nao">Lista Não Ordenada</a><p>
+		<a href="#Aninhada">Lista Aninhada Ordenada</a><p>
+		<a href="#NaoA">Lista Aninhada Não ordenada</a><p>
+	<hr>
+	<Div align="Center">
+	<a name="LISTA"></a>
+	<H2>Lista Ordenada - 3 Filmes Preferidos</H2>
+		<DIV align="left">
+		<OL><font color="#F08080" face="Century Gothic">
+			<LI>O Jogo da Imitação</LI>
+			<LI>Interestelar</LI>
+			<LI>Gravidade</LI>
+		</OL><P>
+	<a href="#voltar"><font size=2>Voltar ao Topo</a></font>
+	<HR>
+	<DIV align="center">
+	<a name="Nao"></a>
+		<H2>Lista não ordenada - 3 Filmes de Ficção </H2>
+				<DIV align="Left">
+			<UL>
+				<LI>Contato</LI>
+				<LI>O retorno de Jedi</LI>
+				<LI>O Homem bicentenário</LI>
+			</UL><P>
+		<a href="#voltar"><font size=2>Voltar ao Topo</a></font>
+	<HR>
+	<DIV align="Center">
+	<a name="Aninhada"></a>
+	<H2>Lista Aninhada Ordenada - Animações</H2>
+		<DIV align="left">
+		<OL type="A">
+			<LI>Pixar Animation Studio</LI>
+				<OL type="a">
+					<LI>Divertidamente</LI>
+					<LI>Toy Story</LI>
+					<LI>Carros</LI>
+				</OL>
+			<LI>Walt Disney Studio</LI>
+				<OL type="a" start="4">
+					<LI>Alice no pais das Maravilhas</LI>
+					<LI>Branca de neve</LI>
+					<LI>A dama e o Vagabundo</LI>
+				</OL>
+			<LI>Warner Bros. Entertainment</LI>
+				<OL type="a" start="7">
+					<LI>Scooby Doo</LI>
+					<LI>Batman</LI>
+					<LI>Superman</LI>
+				</OL>
+		</OL>
+	<a href="#voltar"><font size=2>Voltar ao Topo</a></font>
+	<HR>
+	<DIV align="center">
+	<a name="NaoA"></a>
+	<H2>Lista Aninhada não Ordenada - Super Produções</H2>
+		<Div align="left">
+			<UL>
+				<LI>20th Century Fox Filmes</LI>
+					<UL color="#FFA500">
+						<LI>Avatar</LI>
+							<UL color="#FF7F50">
+								<LI>Direção: James Cameron</LI>
+								<LI>Ano: 2009</LI>
+								<LI>Duração: 2H42M</LI>
+							</UL>
+						<LI>Planeta dos Macacos</LI>
+							<UL color="#FF7F50">
+								<LI>Direção: Matt Reeves</LI>
+								<LI>Ano: 2017</LI>
+								<LI>Duração: 2H22M</LI>
+							</UL>
+						<LI>	
+					</UL>
+				<LI>Universal Studios</LI>
+					<UL color="green">
+						<LI>Jurassic Park</LI>
+							<UL color="#FF7F50">
+								<LI>Direção: Steven Spielberg</LI>
+								<LI>Ano: 1993</LI>
+								<LI>Duração: 2H07M </LI>
+							</UL>
+						<LI>E.T</LI>
+							<UL color="purple">
+								<LI>Direção: Steven Spielberg</LI>
+								<LI>Ano: 1982</LI>
+								<LI>Duração: 2H01M </LI>
+								</font>
+							</UL>
+					</UL>
+			</UL>
+			<a href="#voltar"><font size=2>Voltar ao Topo</a></font>
+			<HR>

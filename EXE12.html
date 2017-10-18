@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+<HEAD>
+	<meta charset="utf-8">
+	<title>Exercício 12</title>
+	
+		<style>
+		body{
+			background-color: #CCFFCC;			
+		}
+		h1{
+			color: navy;
+			font-family: arial;
+			font-size: 20px;
+			text-align: center;
+		}
+		legend{
+			color: navy;
+			font-family: arial;
+			font-size: 15px;
+		}
+		fieldset{
+			background-color: #D3D3D3;
+			font-weight: bold;
+			font-family: verdana;
+			font-size: 15px;
+			color: #696969;
+			text-align: left;			
+		}		
+	</style>
+</head>
+<body>
+
+	<div id="headerwrapper">
+		<div id="header">
+			<h1>EXERCÍCIO 12 - FORMULÁRIO</h1>
+			<h1>ADRIANA e IGOR</h1>
+			
+			<form name="form1" action="exercicio12.PHP" method="get">
+				<fieldset>
+				<legend>Dados pessoais:</legend>
+					<table width=100% border="0">
+						<tr>
+							<th width=325px>
+								Nome
+								<input type="text" name="nome" size="20" maxlength=50
+									value="Ayrton Sena da Silva" disabled><p>
+								Senha [6 dig]:
+								<input type="password" name="senha"
+									size=6 maxlength=6 autofocus required><p>
+								Idade [18-50]:
+								<input type="number" name="idade"
+									value="" size=2 required min=18 max=50><p>
+								Naturalidade:
+								<input type="text" name="natural"
+									value="São Paulo" size=10 readonly>							
+							</th>
+							
+							<th valign="top">
+								Sexo:
+								<input type="radio" name="sexo1"
+									value="Masculino">Masculino
+								<input type="radio" name="sexo1"
+									value="Feminino">Feminino<p>
+								Orientação Sexual:
+								<select name="sexo2">
+									<option value="heterosexual" selected>Heterossexual</option>
+									<option value="Bissexual">Bissexual</option>
+									<option value="homossexual">Homossexual</option>
+								</select><p>
+								Identidade de Gênero:
+								<select name="sexo3">
+									<option value="Homem" selected>Homem</option>
+									<option value="Mulher">Mulher</option>
+									<option value="Travesti">Travesti</option>
+									<option value="Transexual">Transexual</option>
+									<option value="Outra">Outra</option>
+								</select>
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+				
+				<fieldset>
+				<legend accesskey="g">Carros que mais gosto [g]</legend>
+					<table width=100% border="0">
+						<tr>
+							<th width=325px>
+								<input type="checkbox" name="carro"
+									value="Ferrari">Ferrari<br>
+								<input type="checkbox" name="carro"
+									value="Mclaren" checked>Mclaren<br>
+								<input type="checkbox" name="carro"
+									value="Williams" checked>Williams<br>						
+							</th>					
+							
+							<th>
+								<input type="checkbox" name="carro"
+									value="Lotus">Lotus<br>
+								<input type="checkbox" name="carro"
+									value="Tyrrell">Tyrrell<br>
+								<input type="checkbox" name="carro"
+									value="Brabham">Brabham
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+				
+				<fieldset>
+				<legend accesskey="m">Sobre o melhor piloto da Fórmula 1 [m]</legend>
+					<table width=100% border="0">
+						<tr>
+							<th width=500px>
+								<textarea name="areaTXT" rows=3 cols=60 placeholder="máximo de 100 caracteres..." maxlength=100></textarea>
+							</th>					
+							<th>
+								<p><input type="reset" name="btn1" value="LIMPAR"><p>
+								<input type="submit" name="btn2" value="ENVIAR">
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

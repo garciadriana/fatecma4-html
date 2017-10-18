@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML lang="pt-br"><!---EXERCÍCIO 08--->
+<HEAD>
+	<TITLE> EXERCÍCIO 08 </TITLE>
+	<META charset="UTF-8">	
+</HEAD>
+<BODY bgcolor="#C0C0C0">
+	<H1><Font face="arial" size=3 color="#005500"><center>EXERCÍCIO 08 - UTILIZANDO TABELAS MESCLADAS</center></font><H1>
+	<H2><Font face="arial" size=2 color="#550000"><center>Adriana Garcia e Igor Martins </center></font><H2>
+	<HR width=100% size=2 color="#FFFFFF">
+	<TABLE bgcolor="#AAAAAA" border=1 border-color="#C0C0C0" width=100%>
+	<CAPTION><FONT face="Century Gothic">Tabela Não Mesclada</FONT></CAPTION>
+	<TR>
+		<TH>A1</TH>
+		<TH>A2</TH>
+		<TH>A3</TH>
+		<TH>A4</TH>
+	</TR>
+	<TR>
+		<TH>B1</TH>
+		<TH>B2</TH>
+		<TH>B3</TH>
+		<TH>B4</TH>
+	</TR>
+	<TR>
+		<TH>C1</TH>
+		<TH>C2</TH>
+		<TH>C3</TH>
+		<TH>C4</TH>
+	</TR>
+	</TABLE>
+	<TABLE bgcolor="#DC143C" border=3 border-color="#8B0000" width=100%>
+	<CAPTION><FONT face="Century Gothic">Tabela Mesclada</FONT></CAPTION>
+	<TR>
+		<TD colspan=1 bgcolor="#FFD700" width=10% rowspan=2 align="left">A1</TD>
+		<TD colspan=2 bgcolor="#FFFFFF" width=40% rowspan=1 align="center" height=40 valign=bottom>A2</TD>
+		<TD colspan=2 bgcolor="#FF8C00" width=50% rowspan=1 align="center" height=40 valign=top>A3</TD>
+	</TR>
+	<TR>
+		<TH colspan=3 bgcolor="#FF8C00" width=40% rowspan=1 align="center" height=50>B2</TH>
+		<TH colspan=1 bgcolor="#FFD700" width=30% rowspan=2 align="center">B4</TH>	
+	</TR>
+	<TR>
+		<TH colspan=4 bgcolor="#FF8C00" width=10% align="right">C1</TH>
+	</TR>	
+</BODY>

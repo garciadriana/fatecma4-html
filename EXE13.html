@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Exercício 13</title>
+	
+	<style>
+		body{
+			background-color: white;
+		}
+		#headerwrapper{
+			background-color: #DDDDDD;
+			width: 100%;
+			height: 410px;
+		}
+		#header1{
+			background-color: #AA8888;
+			width: 500px;
+			height: 410px;
+			margin: auto;
+			text-align: left;
+		}
+		h1{
+			color: yellow;
+			font-family: arial, verdana;			
+			font-size: 12px;
+			font-weight: bold;
+			text-align: center;
+		}
+		h2{
+			font-family: arial;
+			font-size: 1em;
+			color: purple;
+			font-weight: bold;
+			text-align: center;
+		}
+		dfn{
+			font-family: verdana;
+			font-size: 12px;
+			color: yellow;
+		}
+		legend{
+			color: white;
+			font-weight: bold;
+			font-family: arial;
+			font-size: 1.2em;			
+		}
+		fieldset{
+			background-color: darkred;
+			font-weight: bold;
+			font-family: verdana;
+			font-size: 15px;
+			color: white;			
+		}
+		.btn{
+			color: white;
+			font-size: 16px;
+			border: 0;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			padding-right: 28px;
+			padding-left: 28px;
+		}
+		.tipo1{
+			background-color: darkgreen;			
+		}
+		.tipo1:hover{
+			background-color: green;
+		}
+		.tipo2{
+			background-color: navy;			
+		}
+		.tipo2:hover{
+			background-color: blue;
+		}
+		.tipo3{
+			background-color: #FF9800;
+		}
+		.tipo3:hover{
+			background-color: #E68A00;
+		}
+	</style>
+</head>
+<body>
+	<div id="headerwrapper">
+		<div id="header1">
+			<h1>EXERCÍCIO 13 - FORMULÁRIO HTML 5</h1>
+			<h2>ADRIANA E IGOR</h2>
+	
+			<form name="form2" action="Exe13.PHP" method="post">
+				<fieldset>
+				<legend>Dados Pessoais [p]</legend>
+					Nome:
+					<input type="text" name="nome" size=20 maxlength=50 autofocus>
+					Estado Civil:
+					<input list="estciv" size=12>
+					<datalist id="estciv">
+						<option value="Solteiro" selected>
+						<option value="Casado">
+						<option value="Divorciado">
+						<option value="União Estável">
+						<option value="União Homoafetiva">
+					</datalist><p>
+					
+					Senha:
+					<input type="password" name="senha" size=6 maxlength=6 required>
+					Sexo:
+					<input type="radio" name="sexo"
+						value="Masculino">Masculino
+					<input type="radio" name="sexo"
+						value="Feminino">Feminino
+				</fieldset>
+				
+				<fieldset>
+				<legend>Marque os eletrodomésticos que possui [e]</legend>
+					<input type="checkbox" name="eletro"
+					value="160">Chuveiro Elétrico
+					<dfn>(1h/dia = 160kwh/mês)</dfn><br>
+					<input type="checkbox" name="eletro"
+					value="90">Cook Top
+					<dfn>(1h/dia = 90kwh/mês)</dfn><br>
+					<input type="checkbox" name="eletro"
+					value="260">Ar Condicionado
+					<dfn>(8h/dia = 260kwh/mês)</dfn><br>
+					<input type="checkbox" name="eletro"
+					value="13" checked>Microondas
+					<dfn>(20min/dia = 13kwh/mês)</dfn><br>
+					<input type="checkbox" name="eletro"
+					value="95">Air Fryer
+					<dfn>(1h/dia = 95kwh/mês)</dfn><br>
+					<input type="checkbox" name="eletro"
+					value="60">Geladeira com Freezer
+					<dfn>(60kwh/mês)</dfn><br>
+				</fieldset>
+				
+				<center>
+				<button class="btn tipo1" type="reset" name="bt1">Limpar</button>
+				<button class="btn tipo2" type="submit" name="bt2">Enviar sem validar</button>
+				<button class="btn tipo3" type="submit" name="bt2">Enviar após validar</button>
+				</center>
+				
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
